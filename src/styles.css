@@ -32,36 +32,35 @@ form {
 }
 
 #head-container h2 {
-    margin: 0 20px 0 0;
-    padding-left: 0;
-  }
-  
-  input {
-    border: 3px solid black;
-  }
-  
-  input::placeholder {
-    color: black;
-    font-weight: 900;
-  }
-  
-  input[type="submit"] {
-    color: black;
-    font-weight: 900;
-    background-color: white;
-    position: absolute;
-    right: 20px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-    border: 3px solid black;
-  }
-  
-  ul li {
-    margin: 0;
-  }
-  
-  ul li:nth-child(even) { background-color: rgb(239, 230, 230); }
-  
+  margin: 0 20px 0 0;
+  padding-left: 0;
+}
+
+input {
+  border: 3px solid black;
+}
+
+input::placeholder {
+  color: black;
+  font-weight: 900;
+}
+
+input[type="submit"] {
+  color: black;
+  font-weight: 900;
+  background-color: white;
+  position: absolute;
+  right: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  border: 3px solid black;
+}
+
+ul li {
+  margin: 0;
+}
+
+ul li:nth-child(even) { background-color: rgb(239, 230, 230); }
