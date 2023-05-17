@@ -38,3 +38,17 @@ const submit = async (name,score) => {
 
 submit('Tumaini Maganiko',98);
 submit('Prosper',57);
+
+const refresh = async () => {
+    const receiveData = await fetch(`${leaderboardApi}games/bimDPSRuKmVDalnSDtNx/scores/`, {
+        method: "GET"
+    })
+
+    const ans = await receiveData.json();
+    console.log(ans.result);
+    // console.log(ans.result.user);
+    // console.log(ans.result.score);
+    
+}
+
+refresh();
