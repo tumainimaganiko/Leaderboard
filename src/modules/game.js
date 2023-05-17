@@ -18,3 +18,23 @@ const gameName = async () => {
 
 console.log(gameName())
 gameName()
+
+const submit = async (name,score) => {
+    const submit = await fetch(`${leaderboardApi}games/bimDPSRuKmVDalnSDtNx/scores/`, {
+        method: "POST",
+        body: JSON.stringify({
+            user:name,
+            score:score
+        }),
+        headers: {
+            'content-type':"application/json; charset=UTF-8"
+        }
+    })
+
+    const response = await submit.json();
+    console.log(response.result);
+    return response.result;
+}
+
+submit('Tumaini Maganiko',98);
+submit('Prosper',57);
