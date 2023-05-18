@@ -1,3 +1,7 @@
+body {
+  background-color: bisque;
+}
+
 h1 {
   text-align: center;
 }
@@ -24,6 +28,7 @@ form {
   text-decoration: none;
   border: 3px solid black;
   padding: 3px 7px;
+  color: black;
 }
 
 #head-container {
@@ -61,6 +66,17 @@ ul {
 
 ul li {
   margin: 0;
+  padding: 5px;
 }
 
-ul li:nth-child(even) { background-color: rgb(239, 230, 230); }
+ul li:hover:nth-child(odd) {
+  background-color: rgb(147, 129, 96);
+  color: #fff;
+}
+
+ul li:hover:nth-child(even) {
+  background-color: gray;
+  color: #fff;
+}
+
+ul li:nth-child(even) { background-color: #fff; }
