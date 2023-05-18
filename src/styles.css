@@ -80,3 +80,9 @@ ul li:hover:nth-child(even) {
 }
 
 ul li:nth-child(even) { background-color: #fff; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
