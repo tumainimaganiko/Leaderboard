@@ -69,17 +69,17 @@ ul li {
   padding: 5px;
 }
 
-ul li:hover:nth-child(odd) {
-  background-color: rgb(147, 129, 96);
-  color: #fff;
-}
+ul li:nth-child(even) { background-color: #fff; }
 
 ul li:hover:nth-child(even) {
   background-color: gray;
   color: #fff;
 }
 
-ul li:nth-child(even) { background-color: #fff; }
+ul li:hover:nth-child(odd) {
+  background-color: rgb(147, 129, 96);
+  color: #fff;
+}
 
 footer {
   position: fixed;
