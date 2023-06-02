@@ -72,6 +72,7 @@
 
 <!-- Projects Screenshot -->
 ## 🚀 Project Screenshot <a name="live-demo"></a>
+![Mobile page](/src/screenshots/mobile.png)
 
 ![home page](/src/screenshots/homepage.png)
 
