@@ -1,5 +1,5 @@
 import './styles.css';
-import { refresh, submit } from './modules/api.js';
+import { refreshScore, submitData } from './modules/api.js';
 import generateScores from './modules/generateScores.js';
 
 const leaderboardApi = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
@@ -21,7 +21,7 @@ const gameName = async () => {
 };
 
 const showingScrores = async () => {
-  const retrieve = await refresh(gameID);
+  const retrieve = await refreshScore(gameID);
   generateScores(retrieve.result);
 };
 
@@ -33,7 +33,7 @@ submitButton.addEventListener('click', (e) => {
   const score = document.getElementById('score');
   const errDiv = document.getElementById('errDiv');
   if (name.value !== '' && score.value !== '') {
-    submit(name.value, score.value, gameID);
+    submitData(name.value, score.value, gameID);
     name.value = '';
     score.value = '';
     showingScrores();
