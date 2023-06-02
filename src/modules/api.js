@@ -1,7 +1,8 @@
 const leaderboardApi = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 
-const submit = async (name, score, gameID) => {
-  const submit = await fetch(`${leaderboardApi}games/${gameID}/scores/`, {
+// Sending name and score Data
+const submitData = async (name, score, gameID) => {
+  const submitData = await fetch(`${leaderboardApi}games/${gameID}/scores/`, {
     method: 'POST',
     body: JSON.stringify({
       user: name,
@@ -12,11 +13,12 @@ const submit = async (name, score, gameID) => {
     },
   });
 
-  const response = await submit.json();
+  const response = await submitData.json();
   return response;
 };
 
-const refresh = async (gameID) => {
+// Retrieving the names and scores
+const refreshScore = async (gameID) => {
   const receiveData = await fetch(`${leaderboardApi}games/${gameID}/scores/`, {
     method: 'GET',
     headers: {
@@ -24,18 +26,8 @@ const refresh = async (gameID) => {
     },
   });
 
-  const ans = await receiveData.json();
-  return ans;
+  const result = await receiveData.json();
+  return result;
 };
 
-const generateScores = (score) => {
-  const ul = document.querySelector('.content');
-  ul.innerHTML = '';
-  score.forEach((element) => {
-    const li = document.createElement('li');
-    li.innerHTML = `${element.user} : ${element.score}`;
-    ul.appendChild(li);
-  });
-};
-
-export { submit, refresh, generateScores };
+export { submitData, refreshScore };

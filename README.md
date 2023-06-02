@@ -16,17 +16,20 @@
 - [📗 Table of Contents](#-table-of-contents)
 - [📖  Leaderboard Project ](#--leaderboard-project-)
   - [🛠 Built With ](#-built-with-)
+        - [Languages](#languages)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Project Screenshot ](#-project-screenshot-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
-    - [Install](#install)
     - [Usage](#usage)
+    - [`npm start`](#npm-start)
     - [Run tests](#run-tests)
-    - [Deployment](#deployment)
+  - [Deployment ](#deployment-)
+    - [`npm run build`](#npm-run-build)
   - [👥 Author ](#-author-)
-  - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -37,6 +40,7 @@
 # 📖  Leaderboard Project <a name="about-project"></a>
 
 ## 🛠 Built With <a name="built-with"></a>
+ ##### Languages
 1. HTML
 2. CSS
 3. JAVASCRIPT
@@ -61,10 +65,23 @@
 ### Key Features <a name="key-features"></a>
 
 
-- Added index.html file
-- Added styles.css
-- Added index.js file
-- Used Modular JS
+- User can add a name.
+- User can add a score.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Projects Screenshot -->
+## 🚀 Project Screenshot <a name="live-demo"></a>
+
+![home page](/src/screenshots/homepage.png)
+
+![home page](/src/screenshots/reload.png)
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://tumainimaganiko.github.io/Leaderboard/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -83,41 +100,44 @@ To get a local copy up and running, follow these steps.
 
 ### Setup
 
-Clone this repository to your desired folder:
+
+To get a local copy up and running follow these simple example steps.
 
 
-Run this command:
+- git clone https://github.com/tumainimaganiko/Leaderboard
+- cd Leaderboard
+- npm install
 
-```sh
-  cd my-folder
-  git clone https://github.com/tumainimaganiko/Leaderboard
-```
-
-### Install
-
-Install this project with:
-
-
-command:
-
-```sh
-  cd my-project
-  npm install
-```
 
 ### Usage
 
 To run the project, execute the following command:
+### `npm start`
+Open [http://localhost:8080](http://localhost:8080) to view it in your browser.
 
-Open index.html using live server extension.
+```
+  The page will ask you before reloading when you make changes on the browser.
+
+  You may also see any lint errors in the console if you modify the code.
+```
 
 ### Run tests
 
 Coming soon
 
-### Deployment
 
-Coming soon
+## Deployment <a name="Deployment"></a>
+
+### `npm run build`
+
+```
+Builds the app for production to the build folder.
+
+It correctly bundles the project in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.
+Your app is ready to be deployed!
+```
 
 
 
@@ -137,17 +157,19 @@ Coming soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
-- send and receive data from API.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b 'branchname'`)
+3. Commit your Changes (`git commit -m 'Add some branchname'`)
+4. Push to the Branch (`git push origin branchname`)
+5. Open a Pull Request
 
 Feel free to check the [issues page](../../issues/).
 
@@ -167,7 +189,7 @@ If you like this project rate me star
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank Microverse
+I would like to thank Microverse for accelerating my growth
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
