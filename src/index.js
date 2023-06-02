@@ -1,6 +1,6 @@
 import './styles.css';
 import { refresh, submit } from './modules/api.js';
-import { generateScores } from './modules/generateScores.js';
+import generateScores from './modules/generateScores.js';
 
 const leaderboardApi = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 const gameID = 'vtL6cvMOxCyImcJYZjbt';
@@ -38,13 +38,13 @@ submitButton.addEventListener('click', (e) => {
     score.value = '';
     showingScrores();
     errDiv.style.display = 'none';
-  } else if(name.value === '' && score.value === '') {
+  } else if (name.value === '' && score.value === '') {
     errDiv.textContent = 'Name and Score field are required';
     errDiv.style.display = 'block';
   } else if (name.value === '') {
     errDiv.textContent = 'Please fill in your name please';
     errDiv.style.display = 'block';
-  }else if (score.value === '') {
+  } else if (score.value === '') {
     errDiv.textContent = 'Please fill in your score';
     errDiv.style.display = 'block';
   }
@@ -56,10 +56,12 @@ aLink.addEventListener('click', (e) => {
   showingScrores();
 });
 
-window.onbeforeunload = function askReload() {
+function askReload() {
   return false;
-};
+}
+
+window.onbeforeunload = askReload;
 window.onload = () => {
   showingScrores();
-  askReload()
+  askReload();
 };
