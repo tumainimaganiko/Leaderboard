@@ -10,9 +10,9 @@
     <header>
         <h1>Leaderboard</h1>
     </header>
-    <main>
+    <main class="flex">
         <section class="left-part">
-            <div id="head-container">
+            <div class="head-container flex">
                 <h2>Recent scores</h2>
                 <a href="#">Refresh</a>
             </div>
@@ -22,11 +22,12 @@
         </section>
         <section class="right-part">
             <h2>Add your Scores</h2>
-            <form action="">
-                <input type="text" id="name" name="name" placeholder="Your name" > <br> <br>
-                <input type="number" min="0" id="score" name="score" placeholder="Your score"> <br> <br>
-                <input type="submit" id="submit" value="Submit">
+            <form class="flex">
+                <input type="text" id="name" name="name" placeholder="Your name"> <br>
+                <input type="number" min="0" id="score" name="score" placeholder="Your score"> <br>
+                <input type="submit" id="submitBtn" value="Submit">
             </form>
+            <div id="errDiv"></div>
         </section>
     </main>
     <footer>

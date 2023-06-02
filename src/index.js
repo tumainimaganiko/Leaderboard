@@ -39,7 +39,7 @@ submitButton.addEventListener('click', (e) => {
     showingScrores();
     errDiv.style.display = 'none';
   } else if(name.value === '' && score.value === '') {
-    errDiv.textContent = 'Name and Score field';
+    errDiv.textContent = 'Name and Score field are required';
     errDiv.style.display = 'block';
   } else if (name.value === '') {
     errDiv.textContent = 'Please fill in your name please';
